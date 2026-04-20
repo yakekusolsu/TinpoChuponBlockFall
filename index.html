@@ -49,7 +49,7 @@
         <div class="flex justify-between items-start mb-4">
             <div class="text-left bg-gray-800 p-3 rounded">
                 <p class="text-xl">SCORE: <span id="score" class="font-bold text-yellow-400">0</span></p>
-                <p class="text-sm text-gray-400 mt-1">※1800点で何かが起きる…</p>
+                <p class="text-sm text-gray-400 mt-1">※1000点で何かが起きる…</p>
             </div>
             <button id="start-btn" class="bg-blue-600 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded shadow-lg transition-colors">
                 ゲームスタート
@@ -301,7 +301,7 @@
             scoreElement.innerText = player.score;
 
             // スコア1800以上でホラー演出発動！
-            if (player.score >= 1800 && !isScared) {
+            if (player.score >= 1000 && !isScared) {
                 triggerJumpscare();
             }
         }
